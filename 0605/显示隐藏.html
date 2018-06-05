@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+    }
+    </style>
+</head>
+<body>
+    <input type="button" value="显示/隐藏">
+    <div></div>
+</body>
+<script>
+   window.onload=function(){
+
+
+    var obox=document.querySelectorAll('div')[0];
+    var obtn=document.querySelectorAll('input')[0];
+    obth.onclick=function(){
+        if (obox.style.display=='bolck') {
+            obox.style.display='none';
+            
+        }
+        else{
+            obox.style.display='block'
+        }
+    }
+   }
+
+
+
+</script>
+</html>

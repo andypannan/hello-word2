@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="red.css" id="olink">
+    <style>
+        .red{
+            background:red;  
+        }
+        .blue{
+            background: blue;
+        }
+        .yellow{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="换肤1">
+    <input type="button" value="换肤2">
+    <input type="button" value="换肤3">
+
+</body>
+<script>
+    window.onload=function(){
+        var obth=document.getElementsByTagName("input")[0];
+        var obth1=document.getElementsByTagName("input")[1];
+        var obth2=document.getElementsByTagName("input")[2];
+        var olink=document.getElementById("olink");
+        obth.onclick=function(){
+            document.body.className="red";
+
+        };
+        obth1.onclick=function(){
+            document.body.className="blue";
+        };
+        obth2.onclick=function(){
+            document.body.className="yellow";
+        };
+    }
+</script>
+</html>

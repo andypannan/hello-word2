@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            background: red;
+        }
+        .blue{
+            background: blue;
+
+        }
+        .yellow{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="换肤1">
+    <input type="button" value="换肤2">
+    <input type="button" value="换肤3">
+</body>
+<script>
+    window.onload=function(){
+ var abtn=document.getElementsByTagName("input");
+ var olink=document.getElementById("olink");
+ function show(bg){
+document.body.style.background=bg;
+ }
+ abtn[0].onclick=function(){
+     show('red')
+ }
+ abtn[0].onclick=function(){
+     show('blue')
+ }
+ abtn[0].onclick=function(){
+     show('yellow')
+ }
+
+
+    }
+</script>
+</html>

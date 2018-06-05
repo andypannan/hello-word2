@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+       .red{
+           background:red;
+       }
+       .blue{
+           background: blue;
+       }
+       .yellow{
+           background: yellow;
+       }
+   </style>
+</head>
+<body>
+    <input type="button" value="换肤1">
+    <input type="button" value="换肤2">
+    <input type="button" value="换肤3">
+</body>
+<script>
+    window.onload=function(){
+        //命名 变量 用驼峰  o 带表 单个  a 代表多个
+        var aBtn=document.getElementsByTagName("input");
+        var oLink=document.getElementById("olink");
+        function show(bg){
+            document.body.style.background=bg;
+        }
+        aBtn[0].onclick=function(){
+            show('red')
+        }
+        aBtn[1].onclick=function(){
+            show('yellow')
+        }
+        aBtn[2].onclick=function(){
+            show('blue')
+        }
+    }
+</script>
+</html>

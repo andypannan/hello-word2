@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="大娃">
+    <input type="button" value="二娃">
+    <input type="button" value="三娃">
+    <input type="button" value="爷爷">
+</body>
+<script>
+    window.onload=function(){
+        var abtn=document.querySelectorAll('input');
+        //操作一组元素用for循环
+        for(var i=0;i<abtn.length;i++){
+            abtn[i].onclick=function(){
+                alert(i)
+            }
+        }
+    }
+</script>
+</html>
